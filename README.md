@@ -242,7 +242,7 @@ Now build LAMMPS
 make yes-user-deepmd
 make mpi -j4
 ```
-The option `-j4` means using 4 processes in parallel. You may want to use a different number according to your hardware. 
+The option `-j4` means using 4 processes in parallel. You may want to use a different number according to your hardware. After Aug 2018, if you downloaded a tarball, KSPACE package is not pre-installed in the src directory of LAMMPS. Therefore, KSPACE needs to be installed by hand with command "make yes-kspace".
 
 If everything works fine, you will end up with an executable `lmp_mpi`.
 
